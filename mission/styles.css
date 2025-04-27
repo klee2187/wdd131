@@ -1,0 +1,49 @@
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
+    max-width: 600 px;
+    margin: 3%;
+    padding: 12%;
+    border: darkgray solid 1px;
+}
+h1 {
+    font-size: 2em;
+}
+h4 {
+    color: #006eb6;
+    border-bottom: lightgray solid 1px;
+    font-size: 14px;
+}
+h1, h4 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+p, ol{
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+}
+p {
+    margin-bottom: 20px;
+}
+li {
+    margin-bottom: 20px;
+}
+img {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 5%;
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
