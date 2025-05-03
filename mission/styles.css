@@ -1,8 +1,15 @@
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark h4 {
+    color: #A0D4ED;
+}
 .content {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', serif;
     align-content: center;
-    max-width: 600 px;
-    margin: 3%;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 12%;
     border: darkgray solid 1px;
 }
@@ -10,7 +17,7 @@ h1 {
     font-size: 2em;
 }
 h4 {
-    color: #006eb6;
+    color: #006EB6;
     border-bottom: lightgray solid 1px;
     font-size: 14px;
 }
