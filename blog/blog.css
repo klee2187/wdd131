@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main-nav {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    justify-content: end;
+    justify-items: end;
+    align-items: center;
+    max-width: 100%;
+    padding: .2em;
+    list-style-type: none;
+    margin: 0 auto;
+
+}
+nav {
+    border-top: 2px solid cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+    width: 100vw;
+    margin-left: calc((100% - 100vw) / 2);
+    margin-right: calc((100% - 100vw) / 2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: chocolate;
+    padding: 1em;
+}
+h2 {
+    font-size: small;
+    text-align: left;
+    margin-top: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10%;
+}
+header h1{
+    color: chocolate;
+    font-size: 3em;
+    text-align: center;
+    padding: .25em;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.maincontent {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .5fr 2fr;
+}
+.skiptocontent a {
+    position: absolute;
+    color: chocolate;
+    top: -40;
+    margin-top: 3px;
+    font-size: large;
+}
+.skiptocontent a:focus {
+    left: 0;
+}
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(100px, auto));
+    grid-row: 2/3;
+    height: 50%;
+}
+#hp1 {
+    max-width: 150px;
+    grid-column: 2/3;
+}  
+h3 {
+    grid-column: 2/3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    padding: 1em;
+    grid-column: 3/4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
