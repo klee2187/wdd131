@@ -1,16 +1,13 @@
 const menuButton = document.querySelector(".menu-button");
+const navMenu = document.querySelector("nav");
+
 function toggleMenu() {
-    const menu = document.querySelector("nav");
     menu.classList.toggle("hide");
 }
 
 menuButton.addEventListener("click", toggleMenu);
 
 function handleResize() {
-    const menu = document.querySelector("nav");
-    if (window.innerWidth > 1000) {
-        menu.classList.remove("hide");
-    }
 }
 
 handleResize();
@@ -25,7 +22,7 @@ function handleImageClick(event) {
     if(!clickedImage) return;
 
     const srcParts = clickedImage.src.split("-");
-    const fullImageSrc = srcParts[0] + "-full.jpeg";
+    const fullImageSrc = srcParts[0].replace("-sm", "") + "-full.jpeg";
 
     dialog.innerHTML = `<img src="${fullImageSrc}" alt="${clickedImage.alt}">
         <button class='close-viewer'>X</button>`;

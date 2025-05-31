@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Review Blog</title>
     <link rel="stylesheet" href="blog.css">
-    <script src="blog.js"></script>
+    <script src="blog.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Ready 2 Read</h1>
+        <h1>Kids Read for Fun</h1>
         <nav>
             <ul class="main-nav">
                 <li><a href="#">Home</a></li>
@@ -23,15 +23,8 @@
             <a href="#maincontent">skip to main content</a>
         </div>
     </header>
-    <main class="maincontent">
-        <div class="details-grid">
-            <h2>July 5, 2022</h2>
-            <h2>10-14</h2>
-            <h2>Fantasy</h2>
-            <h2>****</h2>
-        </div>
-            <h3>Septimus Heap Book One: Magyk</h3>
-            <img id="hp1" src="sh1.jpg" alt="Harry Potter and the Sorcerer's Stone book cover"/>
+    <main class="maincontent" id="maincontent">
+            <div id="articles-wrapper"></div>
         <div class="form-grid">
             <p>Filter form will go here</p>
         </div>
