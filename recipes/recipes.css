@@ -1,0 +1,243 @@
+ @import url("https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Sue+Ellen+Francisco&display=swap");
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Sue Ellen Francisco";
+ }
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary-font);
+ }
+
+ header {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2em 1em;
+    width: 100%;
+ }
+
+ main {
+    margin: 2em;
+    flex-grow: 1;
+ }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.headContainer {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.headContainer img {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    align-content: flex-end;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    border: 1px solid black;
+    width: fit-content;
+    text-align: center;
+    padding: 0.2em 0.5em;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1, h3 {
+    font-family: var(--secondary-font);
+}
+
+.searchContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.searchBar {
+    width: 91%;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.searchContainer button {
+    width: 2em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchContainer button:hover {
+    opacity: 0.8;
+}
+
+.recipeCard {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.recipeCard img {
+    margin-bottom: 1em;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+p {
+    display: none;
+    padding: 0 1rem;
+    font-size: 0.9em;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+.rating {
+    font: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social img {
+    width: 3.5em;
+    padding: 0.2em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .headContainer {
+        flex-grow: 0;
+    }
+
+    main {
+        gap: 2em;
+        padding: 1em 2em;
+    }
+
+    p {
+        display: block;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    main {
+        padding: 2rem;
+    }
+
+    .searchContainer {
+        display: flex;
+        width: 100%;
+    }
+
+    .searchBar {
+        width: 91%;
+    }
+
+    .recipeCard {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: 1em;
+        flex-shrink: 0;
+    }
+
+    .recipeCard img {
+        width: 100%;
+        margin-bottom: 0;
+        margin-right: 1em;
+        flex-shrink: 0;
+    }
+
+    .cardText h2, .cardText h3, .cardText .rating, .cardText p {
+        align-items: flex-start;
+        margin: .5em;
+    }
+
+    .cardText p {
+        font-size: 1.1rem;
+    }
+
+    .social img {
+        width: 2em;
+    }
+
+}
