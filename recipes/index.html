@@ -18,55 +18,62 @@
     Sue+Ellen+Francisco&display=swap" rel="stylesheet">
     <title>Recipe Book</title>
     <link rel="icon" type="image/x-icon" href="recipe-book.png">
-    <script src="main.js" defer></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="recipes.mjs"></script>
 </head>
 <body>
 
     <header>
         <div class="headContainer">
-            <img src="recipe-book.png" alt="Clipart of a recipe book"/>
+            <img src="images/recipe-book.png" alt="Clipart of a recipe book"/>
             <h1>RecipeBook</h1>
         </div>
         <div class="searchContainer">
-            <input class="searchBar" type="text" placeholder="Find a recipe">
-            <button><img src="search.svg" alt="magnifying glass icon"></button>
+            <input id="searchBar" type="text" placeholder="Find a recipe">
+            <button id="searchButton"><img src="images/search.svg" alt="magnifying glass icon"></button>
         </div>
     </header>
 
     <main>
-        <div class="recipeCard">
+        <figure class="recipeCard">
             <div>
-                <img src="apple-crisp.jpg" 
-                alt="photo of delicious Apple Crisp dessert">
+                <img src="images/apple-crisp.jpg" 
+                alt="photo of Apple Crisp dessert on a plate">
             </div>
-            <div class="cardText">
-                <h2>dessert</h2>
-                <h3>Apple Crisp</h3>
-                <span
-                	class="rating"
-                	role="img"
-                	aria-label="Rating: 4 out of 5 stars"
-                >
-                	<span aria-hidden="true" class="icon-star">⭐</span>
-                	<span aria-hidden="true" class="icon-star">⭐</span>
-                	<span aria-hidden="true" class="icon-star">⭐</span>
-                	<span aria-hidden="true" class="icon-star-empty">⭐</span>
-                	<span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p>
+            <figcaption class="cardText">
+                <ul class="recipe_tags">
+                    <li>Dessert</li>
+                    <li>Fruit</li>
+                    <li>Indian</li>
+                </ul>
+                <h2><a href="#">Apple Crisp</a></h2>
+                <p class="recipe_ratings">
+                    <span
+                    	class="rating"
+                    	role="img"
+                    	aria-label="Rating: 4 out of 5 stars"
+                    >
+                    	<span aria-hidden="true" class="icon-star">⭐</span>
+                    	<span aria-hidden="true" class="icon-star">⭐</span>
+                    	<span aria-hidden="true" class="icon-star">⭐</span>
+                    	<span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    	<span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                </p>
+                <p class="recipe_description">
                     This apple crisp recipe is a simple yet delicious fall dessert that's great
                     served warm with vanilla ice cream.
                 </p>
-            </div>
-        </div>
+            </figcaption>
+        </figure>
     </main>
 
     <footer>
         <div class="social">
 	        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-	        <a href="#"><img src="instagram_icon.svg" alt="instagram icon"></a>
-	        <a href="#"><img src="youtube_icon.svg" alt="youtube icon"></a>
-	        <a href="#"><img src="pinterest_icon.svg" alt="pinterest icon"></a>
+	        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+	        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+	        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
         </div>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
             Recipe icons created by Freepik - Flaticon</a>

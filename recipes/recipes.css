@@ -62,25 +62,38 @@ h1 {
     align-content: flex-end;
     text-align: center;
     flex-shrink: 0;
-}
-
-h2 {
-    font-size: 1.5em;
-    border: 1px solid black;
-    width: fit-content;
-    text-align: center;
-    padding: 0.2em 0.5em;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 2em;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-h1, h3 {
     font-family: var(--secondary-font);
+    color: black
+}
+
+.cardText h2 a {
+    font-family: var(--secondary-font);
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    margin: 50px 0px 20px 0px;
+    color: var(--primary-color);
+}
+
+.recipe_tags {
+    display: flex;
+}
+
+.recipe_tags li{
+    font-family: var(--primary-font);
+    list-style: none;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.recipe_tags li:nth-child(1) {
+    align-items: flex-start;
+}
+
+.recipe_tags li:nth-child(2) {
+    align-items: flex-end;
 }
 
 .searchContainer {
@@ -89,14 +102,14 @@ h1, h3 {
     justify-content: center;
 }
 
-.searchBar {
+#searchBar {
     width: 91%;
     height: 40px;
     font-size: 1.2rem;
 }
 
-.searchContainer button {
-    width: 2em;
+#searchButton {
+    width: 3em;
     cursor: pointer;
     border: 1px solid black;
     border-radius: 0 5px 5px 0;
@@ -106,8 +119,9 @@ h1, h3 {
     align-items: center;
 }
 
-.searchContainer button:hover {
-    opacity: 0.8;
+#searchButton:hover {
+    background-color: var(--primary-color);
+    opacity: .3;
 }
 
 .recipeCard {
@@ -127,15 +141,12 @@ h1, h3 {
     width: 100%;
 }
 
-p {
+.recipe_description {
     display: none;
-    padding: 0 1rem;
-    font-size: 0.9em;
-    color: black;
-    margin-top: 0.5rem;
+
 }
 
-.rating {
+.recipe_ratings {
     font: 1.2em;
     margin-bottom: 0.5rem;
 }
@@ -207,7 +218,7 @@ footer a:hover {
         width: 100%;
     }
 
-    .searchBar {
+    #searchBar {
         width: 91%;
     }
 
@@ -227,13 +238,17 @@ footer a:hover {
         flex-shrink: 0;
     }
 
-    .cardText h2, .cardText h3, .cardText .rating, .cardText p {
+    .cardText h2, .cardText ul, .recipe_ratings {
         align-items: flex-start;
         margin: .5em;
+        margin-left: 1em;
     }
 
-    .cardText p {
+    .recipe_description {
         font-size: 1.1rem;
+        display: block;
+        margin: .5em;
+        margin-left: 1em;
     }
 
     .social img {
