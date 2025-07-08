@@ -102,13 +102,13 @@ h1 {
     justify-content: center;
 }
 
-#searchBar {
+#search-bar {
     width: 91%;
     height: 40px;
     font-size: 1.2rem;
 }
 
-#searchButton {
+#search-button {
     width: 3em;
     cursor: pointer;
     border: 1px solid black;
@@ -119,7 +119,7 @@ h1 {
     align-items: center;
 }
 
-#searchButton:hover {
+#search-button:hover {
     background-color: var(--primary-color);
     opacity: .3;
 }
@@ -218,7 +218,7 @@ footer a:hover {
         width: 100%;
     }
 
-    #searchBar {
+    #search-bar {
         width: 91%;
     }
 

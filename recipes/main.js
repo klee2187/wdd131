@@ -117,7 +117,7 @@ function searchHandler(event) {
         event.preventDefault();
     }
 
-    const searchInput = document.querySelector('searchBar');
+    const searchInput = document.querySelector('#search-bar');
 
     const query = searchInput.value.trim();
     const filteredResults = filterRecipes(query);
@@ -129,23 +129,8 @@ function init() {
     renderRecipes([recipe]);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    const searchButton = document.getElementById('searchButton');
-    const searchBar = document.getElementById('searchBar');
-
-    if (searchButton) {
-        searchButton.addEventListener('click', searchHandler);
-    }
-
-    if (searchBar) {
-        searchBar.addEventListener('keypress', (event) => {
-            if (event.key === 'Enter') {
-                searchHandler(event);
-            }
-        });
-    }
+    document.querySelector('#search-button')
+            .addEventListener('click', searchHandler);
 
     init();
-})
 
