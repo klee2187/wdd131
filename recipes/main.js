@@ -19,7 +19,7 @@ function tagsTemplate(tags) {
     }
 
     const tagRecipes = tags.map(tag => `<li>${tag}</li>`).join('');
-    return `<ul class="recipe_tags">${tagRecipes}</ul>`;
+    return `<ul class="recipe-tags">${tagRecipes}</ul>`;
 }
 
 function ratingTemplate(rating) {
@@ -45,15 +45,15 @@ function recipeTemplate(recipe) {
         return `<p>Recipe not found<p>`;
     }
 
-    return `<figure class="recipeCard">
+    return `<figure class="recipe-card">
             <div>
                 <img src=${recipe.image} 
                 alt="${recipe.name}">
             </div>
-            <figcaption class="cardText">
+            <figcaption class="card-text">
                 ${tagsTemplate(recipe.tags)}
                 <h2><a href="#">${recipe.name}</a></h2>
-                <p class="recipe_ratings">
+                <p class="recipe-ratings">
                     <span
                     	class="rating"
                     	role="img"
@@ -62,7 +62,7 @@ function recipeTemplate(recipe) {
                         ${ratingTemplate(recipe.rating)}
                     </span>
                 </p>
-                <p class="recipe_description">
+                <p class="recipe-description">
                     ${recipe.description}
                 </p>
             </figcaption>
@@ -129,8 +129,8 @@ function init() {
     renderRecipes([recipe]);
 }
 
-    document.querySelector('#search-button')
-            .addEventListener('click', searchHandler);
+    document.querySelector('.search-container')
+            .addEventListener('submit', searchHandler);
 
     init();
 

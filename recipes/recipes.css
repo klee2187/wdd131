@@ -42,7 +42,7 @@ img {
     height: auto;
 }
 
-.headContainer {
+.head-container {
     display: flex;
     justify-content: center;
     padding: .5em;
@@ -51,7 +51,7 @@ img {
     flex-shrink: 0;
 }
 
-.headContainer img {
+.head-container img {
     max-width: 100px;
     height: auto;
 }
@@ -66,7 +66,7 @@ h1 {
     color: black
 }
 
-.cardText h2 a {
+.card-text h2 a {
     font-family: var(--secondary-font);
     font-size: 1.5em;
     text-align: center;
@@ -75,11 +75,11 @@ h1 {
     color: var(--primary-color);
 }
 
-.recipe_tags {
+.recipe-tags {
     display: flex;
 }
 
-.recipe_tags li{
+.recipe-tags li{
     font-family: var(--primary-font);
     list-style: none;
     border: 2px solid black;
@@ -88,15 +88,15 @@ h1 {
     margin: 0.3rem;
 }
 
-.recipe_tags li:nth-child(1) {
+.recipe-tags li:nth-child(1) {
     align-items: flex-start;
 }
 
-.recipe_tags li:nth-child(2) {
+.recipe-tags li:nth-child(2) {
     align-items: flex-end;
 }
 
-.searchContainer {
+.search-container {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -124,29 +124,29 @@ h1 {
     opacity: .3;
 }
 
-.recipeCard {
+.recipe-card {
     width: 100%;
     border: 1px solid black;
     padding: 1em;
     border-radius: 10px;
 }
 
-.recipeCard img {
+.recipe-card img {
     margin-bottom: 1em;
 }
 
-.cardText {
+.card-text {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.recipe_description {
+.recipe-description {
     display: none;
 
 }
 
-.recipe_ratings {
+.recipe-ratings {
     font: 1.2em;
     margin-bottom: 0.5rem;
 }
@@ -186,7 +186,7 @@ footer a:hover {
         padding: 1rem 2rem;
     }
 
-    .headContainer {
+    .head-container {
         flex-grow: 0;
     }
 
@@ -213,7 +213,7 @@ footer a:hover {
         padding: 2rem;
     }
 
-    .searchContainer {
+    .search-container {
         display: flex;
         width: 100%;
     }
@@ -222,7 +222,7 @@ footer a:hover {
         width: 91%;
     }
 
-    .recipeCard {
+    .recipe-card {
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -231,20 +231,20 @@ footer a:hover {
         flex-shrink: 0;
     }
 
-    .recipeCard img {
+    .recipe-card img {
         width: 100%;
         margin-bottom: 0;
         margin-right: 1em;
         flex-shrink: 0;
     }
 
-    .cardText h2, .cardText ul, .recipe_ratings {
+    .card-text h2, .card-text ul, .recipe-ratings {
         align-items: flex-start;
         margin: .5em;
         margin-left: 1em;
     }
 
-    .recipe_description {
+    .recipe-description {
         font-size: 1.1rem;
         display: block;
         margin: .5em;
