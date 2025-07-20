@@ -5,10 +5,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #d89473;
-  --secondary-color: #eef5db;
-  --accent1-color: #bcf5f7;
-  --accent2-color: #fe5f55;
+  --primary-color: #c86f43;
+  --secondary-color: #4a5568;
+  --accent1-color: #e0f2f7;
+  --accent2-color: #a0aec0;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Edu SA Hand";
