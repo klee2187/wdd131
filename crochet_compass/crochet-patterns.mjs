@@ -1,12 +1,3 @@
-// crochetPatterns.mjs
-
-/**
- * This module exports an array of crochet pattern objects.
- * Each object contains details for a specific crochet project,
- * including its name, a brief description, required materials,
- * recommended hook size, and simplified instructions.
- */
-
 const crochetPatterns = [
   {
     id: 'pattern1',
