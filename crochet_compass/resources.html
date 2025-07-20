@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Provides information on resources, patterns, and a project
+    calculator">
+    <meta name="author" content="Kristen Lee">
+    <meta property="og:title" content="Crochet Compass">
+    <meta property="og:type" content="informational site">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="#">
+    <link rel="icon" type="image/x-icon" href="images/Crochet.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Crochet Compass- Crochet Resource Information and Project Calculator</title>
+    <script src="main.js" type="module"></script>
+    <script type="module" src="crochet-patterns.mjs"></script>
+
+</head>
+<body>
+    <header class="head-container">
+        <img src="images/cc-logo-icon.png" alt="animation of yarn ball compass">
+        <h1>CrochetCompass</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="surround-container">
+            <div class="calc-info">
+                <p>
+                    Estimate the amount of yarn needed for your crochet project.
+                </p>
+                <p class="disclaimer">
+                    *This calculator provides an estimation. Actual yarn usage can vary based on individual tension,
+                    specific yarn brands, and pattern intricacies. Always buy slightly more yarn than estimated.
+                </p>
+            </div>
+            <div class="calc-container">
+                <div class="calc-contents">
+                    <h2>
+                        Crochet Yarn Calculator
+                    </h2>
+                    <form id="yarn-calc-form" >
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="stitch-type">Stitch Type:</label>
+                                <select id="stitch-type">
+                                    <option value="sc">Single Crochet (SC)</option>
+                                    <option value="hdc">Half Double Crochet (HDC)</option>
+                                    <option value="dc">Double Crochet (DC)</option>
+                                    <option value="tr">Treble Crochet (TR)</option>
+                                </select>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="yarn-type">Yarn Type (Weight):</label>
+                                <select id="yarn-type">
+                                    <option value="lace">Lace (0)</option>
+                                    <option value="fingering">Fingering (1)</option>
+                                    <option value="sport">Sport (2)</option>
+                                    <option value="dk">DK (3)</option>
+                                    <option value="worsted" selected>Worsted (4)</option>
+                                    <option value="bulky">Bulky (5)</option>
+                                    <option value="superBulky">Super Bulky (6)</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="hook-size">Hook Size (mm):</label>
+                                <select id="hook-size" placeholder= 2>
+
+                                </select>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="num-stitches">Total Stitches Required:</label>
+                                <input type="number" id="num-stitches" value="1000" min="10">
+                            </div>
+                        </div>
+                    
+                        <div class="scroll-buttons">
+                            <button type="submit" id="calc-btn">Calculate Yarn</button>
+                            <button type="button" id="reset-btn">Reset</button>
+                        </div>
+                    </form>
+                
+                    <div id="result">
+                        Estimated Yarn Needed: <span id="yarn-result"></span> yards
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="pic-strip">
+            <h3>Getting started</h3>
+            <img id="img-rainbow" src="images/yarn-rainbow.jpg" alt="basket of rainbow colored yarns">
+            <p>
+                So you're thinking about giving crochet a try? Awesome! Look no further for a guide
+                to find the perfect beginner pattern and all of the supplies you'll need. We will even
+                tell you where you can find them! We hope you enjoy this wonderful hobby! Time for you 
+                to get hooked on crochet!
+            </p>
+            <img id="img-pumpkins" src="images/pumpkins-1009197_1280.jpg" alt="white crochet pumpkins in a wooden bowl">
+        </div>
+        <div class="list-container">
+            <div class="supplies-list">
+                <h3>Required Crochet Supplies</h3>
+                    <h4>Crochet Hooks</h4>
+                        <p>Description: The primary tool for creating stitches. Available in various 
+                            materials and sizes (mm, US letters, UK numbers).</p>
+                        <p>Purpose: Forms loops to build crochet fabric.</p>
+                    <h4>Yarn</h4>
+                        <p>Description: The material used for crocheting. Comes in different 
+                            fibers (e.g., acrylic, cotton, wool) and weights (thicknesses, e.g., 
+                            Worsted, DK).</p>
+                        <p>Purpose: The fundamental material that forms your project.</p>
+                    <h4>Scissors</h4>
+                        <p>Description: Any sharp pair for cutting yarn.</p>
+                        <p>Purpose: Trimming yarn tails and fastening off.</p>
+                    <h4>Yarn Needle (Tapestry Needle)</h4>
+                        <p>Description: A blunt-tipped needle with a large eye.</p>
+                        <p>Purpose: Weaving in yarn ends and seaming pieces.</p>
+                </u>
+            </div>
+            
+            <div class="store-list">
+                <h3>Crochet Supply Stores</h3>
+                    <h4>Michaels</h4>
+                        <a href="https://www.michaels.com/">Website: https://www.michaels.com/</a>
+                    <h4>Hobby Lobby</h4>
+                        <a href="https://www.hobbylobby.com/">Website: https://www.hobbylobby.com/</a>
+                    <h4>Walmart</h4>
+                        <a href=" https://www.walmart.com/">Website: https://www.walmart.com/</a>
+                    <h4>LoveCrafts</h4>
+                        <a href="https://www.lovecrafts.com/">Website: https://www.lovecrafts.com/</a>
+                    <h4>WEBS - America's Yarn Store (yarn.com)</h4>
+                        <a href="https://www.yarn.com/">Website: https://www.yarn.com/</a>
+                    <h4>Crochet.com:</h4>
+                        <a href="https://www.crochet.com/">Website: https://www.crochet.com/</a>
+                    <h4>Yarnspirations</h4>
+                        <a href="https://www.yarnspirations.com/">Website: https://www.yarnspirations.com/</a>
+                    <h4>Herrschners</h4>
+                        <a href="Website: https://herrschners.com/">Website: https://herrschners.com/</a>
+            </div>
+        </div>
+        <div id="pattern-section">
+            <h3>Browse through these Crochet Patterns</h3>
+            <p>Find your next project inspiration here!</p>
+
+            <div id="pattern-display-area">
+
+            </div>
+
+
+            <form class="search-container">
+                <input id="search-bar" type="text" placeholder="Find a recipe">
+                <button id="search-button">Search</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <img src="images/fb-logo.jpg" alt="facebook icon">
+            <img src="images/pinterest-logo-free-png.jpg" alt="pinterest icon">
+            <img src="images/insta-logo.jpg" alt="instagram icon">
+            <h4>Contact Us: crochet_compass@crochet.com</h4>
+            <p>&copy;2025 Kristen Lee - Crochet Compass</p>
+        </div>
+    </footer>    
+</body>
+</html>
